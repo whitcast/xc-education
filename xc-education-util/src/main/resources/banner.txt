@@ -1,0 +1,9 @@
+.__           .__
+|  |__   ____ |__| _____ _____
+|  |  \_/ __ \|  |/     \\__  \
+|   Y  \  ___/|  |  Y Y  \/ __ \_
+|___|  /\___  >__|__|_|  (____  /
+     \/     \/         \/     \/
+
+武汉黑马团队开发: http://www.whitcast.com
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.xc</groupId>
+		<artifactId>xc-education</artifactId>
+		<version>2.0.0-RELEASE</version>
+	</parent>
+
+	<artifactId>xc-education-user</artifactId>
+	<packaging>pom</packaging>
+
+	<name>xc-education-user</name>
+
+  <modules>
+    <module>xc-education-user-common</module>
+    <module>xc-education-user-feign</module>
+    <module>xc-education-user-service</module>
+  </modules>
+</project>
