@@ -18,16 +18,13 @@ import com.xc.education.web.boss.service.dao.impl.mapper.entity.SysLogExample;
 import com.xc.education.web.boss.service.dao.impl.mapper.entity.SysLogExample.Criteria;
 
 /**
- * 后台操作日志表 
- *
- * @author wujing123
- * @since 2018-01-29
+ * 后台操作日志表
  */
 @Component
 public class SysLogService {
 
 	@Autowired
-	private SysLogDao dao;
+	private SysLogDao sysLogDao;
 
 	public Page<SysLogVO> listForPage(SysLogQO qo) {
 	    SysLogExample example = new SysLogExample();
@@ -42,7 +39,7 @@ public class SysLogService {
 			c.andGmtCreateLessThanOrEqualTo(DateUtil.addDate(DateUtil.parseDate(qo.getEndDate(),"yyyy-MM-dd"), 1));
 		}
 	    example.setOrderByClause(" id desc ");
-        Page<SysLog> page = dao.listForPage(qo.getPageCurrent(), qo.getPageSize(), example);
+        Page<SysLog> page = sysLogDao.listForPage(qo.getPageCurrent(), qo.getPageSize(), example);
         return PageUtil.transform(page, SysLogVO.class);
 	}
 
